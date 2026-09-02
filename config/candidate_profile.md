@@ -42,25 +42,39 @@ these by hand; agents only ever add rows and bump counters.
 
 ## 岗位资格过滤 — 去重之后、写 filtered 之前跑一遍
 
-四条硬规则,按顺序执行。每条都要能说出被剔除的数量,写进周报。
+**总原则:误删一个 junior 岗的代价,远高于误留一个资深岗。**
+Jun 扫一眼就能跳过一条不合适的,但被删掉的他永远看不见。
+所以下面每条规则都只在**有正面证据**时才生效,拿不准就留着。
 
 **1 — 已投过的公司** 查 `jobs/seen.json` 里 `status` 为 `applied` / `ignored` 的行,
 以及公司名匹配的其他岗位。同名公司不同岗位**不要直接丢**,标出来让 Jun 自己判断。
 
-**2 — 过期** `posted_date` 距今超过 **45 天**的丢掉。Indeed 的帖子过了六周基本已下架。
-日期格式有三种,都要能解析:`YYYY-MM-DD`、`Month DD, YYYY`、`N days ago`(相对当次抓取日)。
-> 这是**代理判断**,没有逐个访问链接核实。要精确就得真的去请求每个 URL 看是否 404 / expired。
+**2 — 过期:不过滤。** ~~按发布日期推算是否下架~~ —— 已于 2026-09-02 按 Jun 的要求废除。
+帖子还开不开**只有点进去才知道**,按日期猜会误删还在招的岗位,Jun 宁可自己一个个点。
+> 仍然要**算出并展示**发布天数(`posted_date` 三种格式都要能解析:
+> `YYYY-MM-DD`、`Month DD, YYYY`、`N days ago`(相对当次抓取日)),
+> 让 Jun 自己判断,但**绝不因此丢弃任何岗位**。
 
 **3 — 资深岗(2 年以上经验)** 抓到的数据只有一句话描述,**没有完整 JD,判断不了年限要求**。
-按 Jun 的指示改用薪资代理:**薪资下限高于 $130,000 的丢掉**。
-- 薪资下限 = 薪资字符串里最小的那个数;带 hour / hr 的按 **×2080** 折算年薪;
-  小于 500 的数字一律视为时薪。
-- **豁免:** 标题里出现 `junior` / `jr` / `graduate` / `new grad` / `entry-level` /
-  `intern` / `trainee` / `analyst I` / `associate I` / `2026` / `2027` 的**不受这条限制**。
-  顶级自营给新人本来就 150k 起 —— Flow Traders 的 Junior Quantitative Researcher($175k)
-  和 Akuna Capital 的 Junior Quantitative Researcher($145k)都是要投的岗位,
-  没有这条豁免会被误杀。
+按 Jun 的指示改用薪资代理:薪资下限高于 **$130,000** 的丢掉 —— **但只在毫无 entry-level 迹象时**。
+- 薪资下限 = 薪资字符串里最小的那个数;小于 500 的数字视为时薪。
+- **时薪岗位一律不受这条限制** —— 合同工报价 ×2080 折算出来的数字不能当资历信号。
+- **下列任一成立即豁免,保留:**
+  1. **标题写明级别**:`junior` / `jr` / `graduate` / `new grad` / `entry-level` / `intern` /
+     `trainee` / `campus` / `early career` / `analyst I` / `associate I` / `desk analyst` /
+     `2026` / `2027`
+  2. **抓取时已判定无 seniority 要求** —— `match_reason` 里出现
+     "no seniority markers" / "no seniority indicated" / "entry-level ..." /
+     "no explicit years" 等。这是 filter agent 自己写的判断,比薪资可信。
+  3. **该公司新人起薪本就高于上限** —— 自营/对冲/投行 quant 岗:Flow Traders、Akuna、
+     Jane Street、HRT、Citadel、IMC、Optiver、DRW、Jump、SIG、Five Rings、XTX、
+     Two Sigma、D.E. Shaw、Balyasny、Millennium、Point72、AQR、Walleye、Schonfeld,
+     以及 Goldman / Morgan Stanley / UBS / JPMorgan / Citi / BofA 等的 quant 岗。
 - 没写薪资的**保留**,无法判断不等于不合格。
+> **为什么要这么松:** 只按 $130k 硬切会误杀 Flow Traders 的 Junior Quantitative Researcher
+> ($175k)、Akuna 的 Junior QR($145k)、UBS 的 Quantitative Analyst($145k,抓取时标注
+> "no seniority indicated")、Balyasny 的 Quantitative Researcher($150k)——
+> 这些恰恰是 Jun 最该投的岗位。加上豁免后,被这条挡下的从 11 个降到 6 个。
 
 **4 — 不提供 sponsorship** Jun 是 F-1,美国岗必须能 sponsor。同样**无法逐个核实**,
 目前两类丢掉:
@@ -73,8 +87,8 @@ these by hand; agents only ever add rows and bump counters.
 > 那只表示 JD 里没写明拒绝。不要把它当作通过的依据。
 > Jun 再确认哪家不 sponsor,就往上面的名单里加一行。
 
-参考实现见 `reports/` 里生成台账用的 `filters.py` 逻辑;当前一轮的结果:
-468 去重 → 剔除已投 58 / 过期 171 / 资深 9 / 不 sponsor 3 → **保留 227**。
+参考实现:`config/filters.py`(台账页面直接跑的就是它)。当前一轮的结果:
+468 去重 → 剔除已投 58 / 资深 6 / 不 sponsor 3 → **保留 401**。
 
 ## Basics
 - Name: Jun Zhang

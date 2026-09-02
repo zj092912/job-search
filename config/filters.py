@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """Shared eligibility filters for the job-search backlog.
-Mirrors config/candidate_profile.md -> 岗位资格过滤 so the page and the agents agree."""
+Mirrors config/candidate_profile.md -> 岗位资格过滤 so the page and the agents agree.
+
+Design bias: a wrongly-dropped junior role is far more costly than a wrongly-kept
+senior one. Jun skips a bad row in two seconds; he never sees a dropped one.
+So every rule here fires only on positive evidence, and abstains when unsure.
+"""
 import re, datetime
 
 TODAY = datetime.date(2026, 9, 2)
-MAX_AGE_DAYS = 45          # Indeed listings typically go stale past ~6 weeks
-SALARY_FLOOR_CAP = 130000  # a floor above this signals a senior req, not new-grad
+SALARY_FLOOR_CAP = 130000  # a floor above this *may* signal a senior req
 
 # Employers Jun has confirmed do not sponsor. Grow this by hand only.
 NO_SPONSOR = {
@@ -15,7 +19,31 @@ NO_SPONSOR = {
 # citizenship or permanent residency and do not file H-1B.
 PUBLIC_SECTOR = re.compile(
     r'department of|state of |county of |city of |municipal|public schools|'
-    r'\bdoc\b|corrections|federal reserve|port authority', re.I)
+    r'corrections|federal reserve|port authority', re.I)
+
+# --- entry-level evidence: any one of these disarms the salary proxy ---
+
+# 1) the title states the level
+ENTRY_TITLE = re.compile(
+    r'\bjunior\b|\bjr\.?\b|\bgraduate\b|\bnew ?grad\b|\bentry[- ]level\b|\bintern\b|'
+    r'\btrainee\b|\bcampus\b|\banalyst\s*(i|1)\b|\bassociate\s*(i|1)\b|\blevel\s*(i|1)\b|'
+    r'\bearly career\b|\bdesk analyst\b|\b20(26|27)\b', re.I)
+
+# 2) the scan already judged it non-senior (match_reason is written by the filter agent)
+ENTRY_REASON = re.compile(
+    r'no seniority|entry[- ]level|no explicit years|no years of experience|'
+    r'early[- ]career|internship|campus|new ?grad|junior|graduate|'
+    r'no senior/lead|analyst i\b', re.I)
+
+# 3) firms whose new-grad comp is simply above the cap — salary says nothing about
+#    level here. Quant trading / prop / multistrat shops and the big banks' quant desks.
+HIGH_PAY_ENTRY = re.compile(
+    r'flow traders|akuna|jane street|hudson river|citadel|imc|optiver|drw|jump trading|'
+    r'susquehanna|\bsig\b|five rings|old mission|belvedere|tower research|xtx|radix|'
+    r'headlands|jump crypto|two sigma|d\.? ?e\.? shaw|squarepoint|balyasny|millennium|'
+    r'point72|man group|aqr|qube|voleon|walleye|schonfeld|verition|ExodusPoint|'
+    r'goldman|morgan stanley|\bubs\b|jpmorgan|barclays|citi|deutsche bank|nomura|'
+    r'bank of america|wells fargo|hsbc|bnp paribas|societe generale', re.I)
 
 
 def posted_date(j, first_seen):
@@ -36,6 +64,8 @@ def posted_date(j, first_seen):
 
 
 def age_days(j, first_seen):
+    """Age of the posting in days. Shown to Jun, never used to drop anything —
+    whether a listing is still open can only be settled by opening it."""
     d = posted_date(j, first_seen)
     return None if d is None else (TODAY - d).days
 
@@ -55,11 +85,15 @@ def salary_floor(j):
     return lo
 
 
-# A title that states the level outranks the salary proxy: top prop shops pay
-# new grads well over $130k, and dropping those loses exactly the roles Jun wants.
-ENTRY_TITLE = re.compile(
-    r'\bjunior\b|\bjr\.?\b|\bgraduate\b|\bnew ?grad\b|\bentry[- ]level\b|\bintern\b|'
-    r'\btrainee\b|\banalyst i\b|\bassociate i\b|\blevel i\b|\b20(26|27)\b', re.I)
+def entry_evidence(j):
+    """Why this job is treated as open to a new grad despite the pay. None = no evidence."""
+    if ENTRY_TITLE.search(j.get('title') or ''):
+        return "标题写明级别"
+    if ENTRY_REASON.search(j.get('match_reason') or ''):
+        return "抓取时已判定无 seniority 要求"
+    if HIGH_PAY_ENTRY.search(j.get('company') or ''):
+        return "该公司新人起薪本就高于上限"
+    return None
 
 
 def no_sponsor_reason(j):
@@ -72,15 +106,21 @@ def no_sponsor_reason(j):
     return None
 
 
-def screen(j, first_seen):
-    """Return (kept: bool, reason: str|None). reason is why it was dropped."""
+def screen(j, first_seen=None):
+    """Return (kept: bool, reason: str|None). reason is why it was dropped.
+
+    No staleness rule: posting age is reported, not filtered on.
+    """
     why = no_sponsor_reason(j)
     if why:
         return False, "no-sponsor:" + why
-    a = age_days(j, first_seen)
-    if a is not None and a > MAX_AGE_DAYS:
-        return False, "stale:发布于 %d 天前" % a
+
+    s = (j.get('salary') or '')
+    if re.search(r'hour|/hr|hr\b', s, re.I):
+        return True, None      # 时薪是合同工报价，×2080 折算不能当资历信号
+
     fl = salary_floor(j)
-    if fl is not None and fl > SALARY_FLOOR_CAP and not ENTRY_TITLE.search(j.get('title') or ''):
-        return False, "senior:薪资下限 $%s 起，大概率非 junior" % format(int(fl), ',')
+    if fl is not None and fl > SALARY_FLOOR_CAP and not entry_evidence(j):
+        return False, "senior:薪资下限 $%s 起，且无任何 entry-level 迹象" % format(int(fl), ',')
+
     return True, None

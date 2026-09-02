@@ -40,6 +40,42 @@ rather than widening the filter to fill space.
 again · `ignored` = Jun looked and passed, never show again. Jun (or Claude) edits
 these by hand; agents only ever add rows and bump counters.
 
+## 岗位资格过滤 — 去重之后、写 filtered 之前跑一遍
+
+四条硬规则,按顺序执行。每条都要能说出被剔除的数量,写进周报。
+
+**1 — 已投过的公司** 查 `jobs/seen.json` 里 `status` 为 `applied` / `ignored` 的行,
+以及公司名匹配的其他岗位。同名公司不同岗位**不要直接丢**,标出来让 Jun 自己判断。
+
+**2 — 过期** `posted_date` 距今超过 **45 天**的丢掉。Indeed 的帖子过了六周基本已下架。
+日期格式有三种,都要能解析:`YYYY-MM-DD`、`Month DD, YYYY`、`N days ago`(相对当次抓取日)。
+> 这是**代理判断**,没有逐个访问链接核实。要精确就得真的去请求每个 URL 看是否 404 / expired。
+
+**3 — 资深岗(2 年以上经验)** 抓到的数据只有一句话描述,**没有完整 JD,判断不了年限要求**。
+按 Jun 的指示改用薪资代理:**薪资下限高于 $130,000 的丢掉**。
+- 薪资下限 = 薪资字符串里最小的那个数;带 hour / hr 的按 **×2080** 折算年薪;
+  小于 500 的数字一律视为时薪。
+- **豁免:** 标题里出现 `junior` / `jr` / `graduate` / `new grad` / `entry-level` /
+  `intern` / `trainee` / `analyst I` / `associate I` / `2026` / `2027` 的**不受这条限制**。
+  顶级自营给新人本来就 150k 起 —— Flow Traders 的 Junior Quantitative Researcher($175k)
+  和 Akuna Capital 的 Junior Quantitative Researcher($145k)都是要投的岗位,
+  没有这条豁免会被误杀。
+- 没写薪资的**保留**,无法判断不等于不合格。
+
+**4 — 不提供 sponsorship** Jun 是 F-1,美国岗必须能 sponsor。同样**无法逐个核实**,
+目前两类丢掉:
+- **确认名单**(Jun 亲自确认过的,只能手动加):
+  - `Columbia Threadneedle Investments` — 坚决不提供 sponsorship
+- **美国公营单位** — 公司名匹配 `department of` / `state of` / `county of` / `city of` /
+  `municipal` / `public schools` / `corrections` / `federal reserve` / `port authority`。
+  政府/州/市级岗位要求公民或绿卡,不办 H-1B。
+> ⚠️ 抓取数据里的 "no no-sponsorship language found" **不等于该公司会 sponsor**,
+> 那只表示 JD 里没写明拒绝。不要把它当作通过的依据。
+> Jun 再确认哪家不 sponsor,就往上面的名单里加一行。
+
+参考实现见 `reports/` 里生成台账用的 `filters.py` 逻辑;当前一轮的结果:
+468 去重 → 剔除已投 58 / 过期 171 / 资深 9 / 不 sponsor 3 → **保留 227**。
+
 ## Basics
 - Name: Jun Zhang
 - Status: International student (F-1 visa). **US roles must offer visa sponsorship** (CPT/OPT/H-1B path). Exclude any US listing that states "no sponsorship" / "must be authorized to work without sponsorship now or in the future".

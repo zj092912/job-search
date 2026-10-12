@@ -2,7 +2,7 @@
   "_comment": "Dedupe ledger for the job-search pipeline. The FILTER agent must read this before writing jobs/filtered/<date>.json, drop any job whose fingerprint is already here, then append the new ones and commit. See config/candidate_profile.md -> Deduplication.",
   "_fingerprint": "lowercase company|title|location, every run of non-alphanumeric characters collapsed to a single space, trimmed. NEVER key on url - Indeed issues a fresh to.indeed.com short link on every scan, which is what broke dedupe.",
   "_status_values": "seen = surfaced before | applied = Jun applied, never show again | ignored = Jun rejected it, never show again",
-  "generated": "2026-10-07",
+  "generated": "2026-10-12",
   "backfilled_from": [
     "2026-07-09",
     "2026-07-15",
@@ -79,9 +79,9 @@
       "title": "Fixed-Income/Quantitative Analyst",
       "location": "Central, Hong Kong Island",
       "first_seen": "2026-07-15",
-      "last_seen": "2026-10-07",
-      "times_seen": 14,
-      "latest_url": "https://to.indeed.com/aa4nr9cmpflh",
+      "last_seen": "2026-10-12",
+      "times_seen": 15,
+      "latest_url": "https://to.indeed.com/aaqzdkvgqnjs",
       "status": "seen"
     },
     {
@@ -178,9 +178,9 @@
       "title": "Quantitative Analyst - US",
       "location": "Jersey City, NJ",
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-21",
-      "times_seen": 9,
-      "latest_url": "https://to.indeed.com/aa94rv2zmjqv",
+      "last_seen": "2026-10-12",
+      "times_seen": 10,
+      "latest_url": "https://to.indeed.com/aah2lr67gmbp",
       "status": "seen"
     },
     {
@@ -222,9 +222,9 @@
       "title": "Financial and Data Analyst, Contract Logistics North America",
       "location": "Wayne, NJ",
       "first_seen": "2026-07-09",
-      "last_seen": "2026-09-21",
-      "times_seen": 10,
-      "latest_url": "https://to.indeed.com/aa4rdc49tcwq",
+      "last_seen": "2026-10-12",
+      "times_seen": 11,
+      "latest_url": "https://to.indeed.com/aagxngdxskv8",
       "status": "seen"
     },
     {
@@ -288,9 +288,9 @@
       "title": "Quantitative Analyst - ABS Modeling",
       "location": "Needham, MA",
       "first_seen": "2026-07-20",
-      "last_seen": "2026-09-21",
-      "times_seen": 7,
-      "latest_url": "https://to.indeed.com/aanvwvry2fn8",
+      "last_seen": "2026-10-12",
+      "times_seen": 8,
+      "latest_url": "https://to.indeed.com/aaq8jmhmv8lf",
       "status": "applied",
       "applied_date": "2026-08-11"
     },
@@ -377,9 +377,9 @@
       "title": "Risk Analyst",
       "location": "London",
       "first_seen": "2026-07-27",
-      "last_seen": "2026-09-02",
-      "times_seen": 6,
-      "latest_url": "https://to.indeed.com/aawsp6s8kcwb",
+      "last_seen": "2026-10-12",
+      "times_seen": 7,
+      "latest_url": "https://to.indeed.com/aap26s4x99tk",
       "status": "seen"
     },
     {
@@ -465,9 +465,9 @@
       "title": "Graduate Quantitative Developer",
       "location": "London",
       "first_seen": "2026-07-09",
-      "last_seen": "2026-10-07",
-      "times_seen": 12,
-      "latest_url": "https://to.indeed.com/aaz4q7ncrsdm",
+      "last_seen": "2026-10-12",
+      "times_seen": 13,
+      "latest_url": "https://to.indeed.com/aa4lpr9y944x",
       "status": "seen"
     },
     {
@@ -762,9 +762,9 @@
       "title": "Quantitative Investment Analyst",
       "location": "Boston, MA",
       "first_seen": "2026-07-29",
-      "last_seen": "2026-10-07",
-      "times_seen": 11,
-      "latest_url": "https://to.indeed.com/aatk4fblsj99",
+      "last_seen": "2026-10-12",
+      "times_seen": 12,
+      "latest_url": "https://to.indeed.com/aavmqx7klj7t",
       "status": "seen"
     },
     {
@@ -861,9 +861,9 @@
       "title": "Independent Quantitative Analyst",
       "location": "London",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-07",
-      "times_seen": 12,
-      "latest_url": "https://to.indeed.com/aa2nj4ztnbhl",
+      "last_seen": "2026-10-12",
+      "times_seen": 13,
+      "latest_url": "https://to.indeed.com/aaq8qbw29ltm",
       "status": "seen"
     },
     {
@@ -1026,9 +1026,9 @@
       "title": "Trade Finance Analyst",
       "location": "Lai Chi Kok, Kowloon",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aayscld2fq7x",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aa2d7xh7qmql",
       "status": "seen"
     },
     {
@@ -1400,9 +1400,9 @@
       "title": "Credit Middle Analyst, Japanese Bilingual",
       "location": "New York, NY",
       "first_seen": "2026-08-19",
-      "last_seen": "2026-10-05",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aafbchcypvnf",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aawxmrfy9ny6",
       "status": "seen"
     },
     {
@@ -1730,9 +1730,9 @@
       "title": "Analyst/Associate, GCIB Credit, Enterprise Credit, Hong Kong",
       "location": "Hong Kong Island",
       "first_seen": "2026-08-19",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aaqjcwpqx4cw",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aa8cklx9h67d",
       "status": "seen"
     },
     {
@@ -1884,9 +1884,9 @@
       "title": "Research Analyst",
       "location": "Kowloon",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-07",
-      "times_seen": 6,
-      "latest_url": "https://to.indeed.com/aadv6t98hbkf",
+      "last_seen": "2026-10-12",
+      "times_seen": 7,
+      "latest_url": "https://to.indeed.com/aawr2sjzc49g",
       "status": "seen"
     },
     {
@@ -1917,9 +1917,9 @@
       "title": "Banking - Capital Markets, Summer Analyst, Hong Kong – APAC, 2027",
       "location": "Central and Western District, Hong Kong Island",
       "first_seen": "2026-08-19",
-      "last_seen": "2026-10-07",
-      "times_seen": 4,
-      "latest_url": "https://to.indeed.com/aachw7d4tmyj",
+      "last_seen": "2026-10-12",
+      "times_seen": 5,
+      "latest_url": "https://to.indeed.com/aash8hrxwyrr",
       "status": "seen"
     },
     {
@@ -1994,9 +1994,9 @@
       "title": "FX Risk Analyst",
       "location": "Pasadena, California",
       "first_seen": "2026-08-03",
-      "last_seen": "2026-08-19",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Co4BChY2OHk0MTNqNlowSFdxRGFnbzJGbTZnEiQwMWEwMTliYy0zZjcxLTdlOTYtYjY4NC04Yzc3MDkyZTBhMTAaSkFBSHpqZ2dMNmd4OGx6Z0x0Y3FtdVAxT2pYOS02ODA2U2xha1VsQlJ0OTRncFl3dmFPSHhLMmp5ZU5jQS1FXy1ES3p5QzJ2S293IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZlYWp4LUlscHUwWFhoM2dDeTFPb2p3EiQwMWExMmZjOC0zY2RmLTdkNjEtOTU1MS0zOWMzNWNkOTkzYTYaUEFBSEtGSl9ROG41R2pROXlHYlBIeW50OE93ZEZOVVEwTmtmdDQxaURycDBqTE5TYnZRNEJNLUxWZ0NiYzA0a1ZVSVNycXFwOGZxMUhhWlNlIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -3996,9 +3996,9 @@
       "title": "Banking - Corporate Banking, Summer Analyst, Hong Kong – APAC, 2027",
       "location": "Central and Western District, Hong Kong Island",
       "first_seen": "2026-08-26",
-      "last_seen": "2026-10-07",
-      "times_seen": 4,
-      "latest_url": "https://to.indeed.com/aam7d9ckhhhx",
+      "last_seen": "2026-10-12",
+      "times_seen": 5,
+      "latest_url": "https://to.indeed.com/aapwx9fxw2dz",
       "status": "seen"
     },
     {
@@ -4062,9 +4062,9 @@
       "title": "Quant Trader",
       "location": "Central and Western District, Hong Kong Island",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aav44hlrbfzr",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aazhmcwt2xfk",
       "status": "seen"
     },
     {
@@ -4315,9 +4315,9 @@
       "title": "Data Analyst",
       "location": "London",
       "first_seen": "2026-09-02",
-      "last_seen": "2026-09-21",
-      "times_seen": 6,
-      "latest_url": "https://to.indeed.com/aarwfmk7vqhm",
+      "last_seen": "2026-10-12",
+      "times_seen": 7,
+      "latest_url": "https://to.indeed.com/aard6sryz8sf",
       "status": "seen"
     },
     {
@@ -4348,9 +4348,9 @@
       "title": "Team Hornet Data Analyst",
       "location": "Ridgecrest, California",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-09-21",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CqABChZKV3BQa0NXUGdRM1kxSE5SRERzdHhBEiQwMWEwYzNhZS01OTVmLTczNDMtYmYwYi0zMjQyOGJiZDY4NWMaXEFBR0J5UFh6WHJvQUtSMXJOMzJtQmdvN0Itdm9PVWpjYjM1dm9yMUZnMFpFZnNvSERWQ2ExX1JKcUlpWkpialRXTmNuSzJ1WlVwTVprWkZ5UEtNTEdvdGduSENEIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKV3BQa0NXUGdRM1kxSE5SRERzdHhBEiQwMWExMmZjOC0xODYxLTdiNjYtOTJhMC03OTM3MDEyNTM2NDYaW0FBSFc4QWRHcEltQU9PN1ZNZTBNNWxwSGpuNzM2cVpqWmFwa3VJRTJ5Y1RLYzNPR0NRSURJdzlyYlhqVTVTTXdXQTdrLXJzd3pROF95LVBkTm9FZmhLYTB3cEkgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -5371,9 +5371,9 @@
       "title": "Quantitative Trading and Research - Equity Derivatives Exotics - Associate",
       "location": "New York, New York",
       "first_seen": "2026-08-19",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZxWTFzUHVSa25Oek4xRHViMUVuNjZnEiQwMWExMTYwYy0zMmEyLTc3MWEtYjE5Yi1jNDlhNDM1Zjk0NTkaW0FBRUFoOUV2akZmcFhFWlcyUW9aRHdtVzVTbW9Oc1V0WGtFcTYxVzhLX1Y0RnlhaGh5NUdaQkdMZXBFSEo0X295cHYxSW9tMnJYTTA5N1c4Z0oyV0ZLZXozcXcgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZxWTFzUHVSa25Oek4xRHViMUVuNjZnEiQwMWExMmZjOC0xZTg2LTdkZmMtYjZlMi1iYjcwMDJmZGEwNzUaW0FBRjFEOVdYUkhlQVptdVV5TWNPNW5TMzZNdnl1TTlkMWRtOU5ndGVpTWdkTWZRVVRBQzk0dkRlRVo3cjAzZkNQV2NNcmd5aXdUeTZqOGItdWtJbmViWHZnUDQgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -6735,9 +6735,9 @@
       "title": "Ph.D. Graduate Intern - Quantitative Portfolio Risk Analytics",
       "location": "Cambridge, Massachusetts",
       "first_seen": "2026-07-22",
-      "last_seen": "2026-10-07",
-      "times_seen": 7,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZldHpSYktZYTFjTDVOb2N1anl4bkRREiQwMWExMTYwYi1jNjViLTc0MjgtYjk3NS03YWM3YmVmZjdlMTkaUEFBRU5Ra1N2UXdrWW03clpIdFFKejk1eVNKZ3o1T042Z09Xb05rb0laLTBmVU1pRzl0dTEtdUZNSllHREd4WTlFVTVTU0VqVmtOSTdfR3g1IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 8,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZldHpSYktZYTFjTDVOb2N1anl4bkRREiQwMWExMmZjOC0wZjdmLTczMDAtYThjYS02YTkwZTlmMTQyNmUaUEFBRnZEbXdEOTRKaWZGaGl5TUhhcW9LVHV4UlBJNzVuN3VGLTN2MFJ4cDEzd2JqMVp3c1MyNVR2OHF4dWNIVHpzYy1VTk5UY3Q1anZWMy10IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -8198,9 +8198,9 @@
       "title": "2027 | EMEA | London | Investment Banking Quantitative Strats | Summer Analyst",
       "location": "London",
       "first_seen": "2026-09-07",
-      "last_seen": "2026-09-21",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aa8kc2js2j7b",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa7bpytqhn28",
       "status": "seen"
     },
     {
@@ -8484,9 +8484,9 @@
       "title": "Quantitative Analyst – Execution Research",
       "location": "London",
       "first_seen": "2026-09-09",
-      "last_seen": "2026-10-07",
-      "times_seen": 7,
-      "latest_url": "https://to.indeed.com/aaphcy9r4ld9",
+      "last_seen": "2026-10-12",
+      "times_seen": 8,
+      "latest_url": "https://to.indeed.com/aabrw6z9jrxs",
       "status": "seen"
     },
     {
@@ -8792,9 +8792,9 @@
       "title": "Analyst II, Credit",
       "location": "London",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-10-07",
-      "times_seen": 6,
-      "latest_url": "https://to.indeed.com/aapdryl8d68c",
+      "last_seen": "2026-10-12",
+      "times_seen": 7,
+      "latest_url": "https://to.indeed.com/aaxnj4xvqwks",
       "status": "seen"
     },
     {
@@ -8825,9 +8825,9 @@
       "title": "Quantitative Analyst - AVP",
       "location": "Central and Western District, Hong Kong Island",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aaz9ndzygvnn",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aa8jx6dsswdq",
       "status": "seen"
     },
     {
@@ -8836,9 +8836,9 @@
       "title": "Officer, Credit Portfolio Intmd Analyst",
       "location": "Kowloon City, Kowloon",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-16",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aat2gpqy8fx4",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa9jqq8k6tm9",
       "status": "seen"
     },
     {
@@ -8847,9 +8847,9 @@
       "title": "Associate, Credit Risk Exposure Management",
       "location": "Central, Hong Kong Island",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-10-07",
-      "times_seen": 4,
-      "latest_url": "https://to.indeed.com/aagfq4m27scl",
+      "last_seen": "2026-10-12",
+      "times_seen": 5,
+      "latest_url": "https://to.indeed.com/aac87njb6nfb",
       "status": "seen"
     },
     {
@@ -8979,9 +8979,9 @@
       "title": "Senior Margins Business Analyst - Vice President",
       "location": "Jersey City, NJ",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-30",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aa2dlzg88rqj",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aad9zqw6f82b",
       "status": "seen"
     },
     {
@@ -8990,9 +8990,9 @@
       "title": "Technical Lead Stress Testing Platform, Risk Technology - Senior Vice President",
       "location": "Rutherford, NJ",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aag2c2dhgtv7",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aabmfczbp8ws",
       "status": "seen"
     },
     {
@@ -9012,9 +9012,9 @@
       "title": "Logistics Pricing Analyst",
       "location": "Lyndhurst, NJ",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aawmd9f2pjgz",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aa2ky99tzhpl",
       "status": "seen"
     },
     {
@@ -9199,9 +9199,9 @@
       "title": "Risk Analyst - AI Trainer",
       "location": "Santa Clara, CA",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-05",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aan62yxn2sgt",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aatwrt4m9n4x",
       "status": "seen"
     },
     {
@@ -9265,9 +9265,9 @@
       "title": "Quantitative Analyst - AI Trainer",
       "location": "San Francisco Bay Area, CA",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 4,
-      "latest_url": "https://to.indeed.com/aaxjmzy86dsc",
+      "last_seen": "2026-10-12",
+      "times_seen": 5,
+      "latest_url": "https://to.indeed.com/aawdyrlcgtq7",
       "status": "seen"
     },
     {
@@ -9309,9 +9309,9 @@
       "title": "Senior Quantitative Analysis Manager",
       "location": "London",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aah98ltpnfhc",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aahwxn7xf8hq",
       "status": "seen"
     },
     {
@@ -9386,9 +9386,9 @@
       "title": "Senior Analyst/Associate, Credit Investment",
       "location": "London",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aa7bbtsmhklc",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aassfdm2r6zd",
       "status": "seen"
     },
     {
@@ -9595,9 +9595,9 @@
       "title": "Senior Credit Analyst",
       "location": "Kowloon",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aal4dy77ztyl",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aa7dlzwj2m7f",
       "status": "seen"
     },
     {
@@ -9617,9 +9617,9 @@
       "title": "(SAS required) Wealth Lending In-Business Risk Stress Testing, Credit Portfolio Sr. Analyst, AVP",
       "location": "Kowloon City, Kowloon",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-30",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aacblpc8j2g6",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aapc7nnmjrxb",
       "status": "seen"
     },
     {
@@ -9628,9 +9628,9 @@
       "title": "Product Reporting Analyst (APAC Wealth)",
       "location": "Central, Hong Kong Island",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-16",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aatcfnhtmwk7",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aalyc47mqhxs",
       "status": "seen"
     },
     {
@@ -9848,9 +9848,9 @@
       "title": "Principal Credit Risk & Pricing Analyst - Home Equity",
       "location": "Westwood, Massachusetts",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-09-21",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpYBChY1UTFCY1JnNzZTRGxhQ3ZYNF90SUF3EiQwMWEwYzNhZS0zN2JkLTc3MzMtODAwYi01ZDlkMDY5MTQ5ZjcaUkFBRnNwM0tFWXN6Y1ZybUVpYzMxc3Z0bUl2WXlFeVRSTVppem9FanZKOUdzOTNVX2k3SmVUSWp5d09iWVBXeVVRam9weGY0cklkWnF4UFpHWUEgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZzS3ZNV0d0OGxFdF9FU2lvTlNoaGRnEiQwMWExMmZjOC0yMTQyLTdhNzQtYjJjNi02Y2VjNjM1MjI4YTQaUEFBR2NhcEQxV3BLQTBsSGVRWTJIajN5WGQ4LWtOX0M5cDJLQ21vcnF3eVI5dE5SeXdtZkR4MHRHUkJaRzYzbnRETGFhdHJSaloxMFNRRW85IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -10013,9 +10013,9 @@
       "title": "Risk Management - Quant Analytics Manager - Vice President",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZzNFFPM1dyU0JfT0FaR2pNRVpsbEh3EiQwMWExMTYwYi1jOTljLTc5ZWYtYmJkOS00MWY4Y2Y0YmI2MTYaW0FBRjZ2STZqa0o3TDYwendka3prd1k4RF9QRHR4anU2akY5YlVYNUxfbWRMb3BlNk9EUFUxaWhyNURoVVlua3V0XzJ3cnRVbmVVand2V0QwYy1mWWdXVGM4RGcgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZzNFFPM1dyU0JfT0FaR2pNRVpsbEh3EiQwMWExMmZjOC0zNDUyLTc0MmYtODM2OC04ZjllMTVmYTdhNWEaW0FBRXRGZWZoRGlKMnlwQ0d1aUhFeHhVNHVJSS1COWhuaVRJRms1Q2ZNV2xaOWRDanhrdUNFNkpaNTNhOHdjYVh6c2ZWaWFrVmc0Y2pxOFBDQ2g4QmxfV0RpeDggya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -10189,9 +10189,9 @@
       "title": "Analyst, Private Credit",
       "location": "Boston, MA",
       "first_seen": "2026-09-21",
-      "last_seen": "2026-10-07",
-      "times_seen": 5,
-      "latest_url": "https://to.indeed.com/aakk8zw4tcy9",
+      "last_seen": "2026-10-12",
+      "times_seen": 6,
+      "latest_url": "https://to.indeed.com/aa78rty86cr4",
       "status": "seen"
     },
     {
@@ -10222,9 +10222,9 @@
       "title": "Junior Risk Analyst",
       "location": "New York, NY",
       "first_seen": "2026-09-21",
-      "last_seen": "2026-10-05",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aabqmp88xsvv",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aatptmtml2zy",
       "status": "seen"
     },
     {
@@ -10354,9 +10354,9 @@
       "title": "Statistical Analyst - AI Trainer",
       "location": "Los Angeles, CA",
       "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aaxfvjvhgn89",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aatm79q44jrc",
       "status": "seen"
     },
     {
@@ -10783,9 +10783,9 @@
       "title": "Quantitative Trading Specialist",
       "location": "London",
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aamjlzbgmqdf",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aadg9289nfn4",
       "status": "seen"
     },
     {
@@ -10816,9 +10816,9 @@
       "title": "Credit Analyst – Real Estate & Digital Infrastructure",
       "location": "London",
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aaxvm6ccvkjy",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aamsnpqfrwmy",
       "status": "seen"
     },
     {
@@ -10904,9 +10904,9 @@
       "title": "Financial Analyst Intern 2027",
       "location": "London",
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aat9wj4mrsyj",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aafspwt87hzk",
       "status": "seen"
     },
     {
@@ -10926,9 +10926,9 @@
       "title": "2027 Quantitative Research - Asset Management - Summer Analyst Internship - London",
       "location": "London",
       "first_seen": "2026-09-28",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aamjkxkk4f7t",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aahwv64ybgww",
       "status": "seen"
     },
     {
@@ -11223,9 +11223,9 @@
       "title": "Business Analyst",
       "location": "North Billerica, MA",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aast67s7zpmf",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aanw4t4bffnf",
       "status": "seen"
     },
     {
@@ -11245,9 +11245,9 @@
       "title": "Financial Analyst",
       "location": "Brooklyn, NY",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aacwtjjqbx8z",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa8kmdnlpjx8",
       "status": "seen"
     },
     {
@@ -11278,9 +11278,9 @@
       "title": "Early Careers: Risk & Analytics and Alternative Risk Transfer Analyst- 2027",
       "location": "New York, NY",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aa96xz8jhxlv",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aawltjxf2dw4",
       "status": "seen"
     },
     {
@@ -11729,9 +11729,9 @@
       "title": "Quantitative Equity Research Analyst",
       "location": "London",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aadhhmjg467p",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aayq86d8mdtz",
       "status": "seen"
     },
     {
@@ -11806,9 +11806,9 @@
       "title": "Investor Relation cum Investment Analyst",
       "location": "Tsim Sha Tsui, Kowloon",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aa4vtqw4qpyx",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aa2bb2yjwhqt",
       "status": "seen"
     },
     {
@@ -11828,9 +11828,9 @@
       "title": "Analyst/Consultant (Data Analytics)",
       "location": "深圳市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aafl2zql66yp",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aam72n6pyxg6",
       "status": "seen"
     },
     {
@@ -11916,9 +11916,9 @@
       "title": "Data Analyst",
       "location": "深圳市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aaq6477mzvht",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aappvzqxwgt4",
       "status": "seen"
     },
     {
@@ -11949,9 +11949,9 @@
       "title": "Junior Pricing Analyst",
       "location": "深圳市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aaqsp6vm64hy",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aa4vhcghm7x6",
       "status": "seen"
     },
     {
@@ -12015,9 +12015,9 @@
       "title": "Associate Development Program, March 2027 (Boston)",
       "location": "Boston, MA",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aay79thlsw82",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aagc9gkqbdkr",
       "status": "seen"
     },
     {
@@ -12081,9 +12081,9 @@
       "title": "Options & Portfolio Strategy Analyst — AI & Python",
       "location": "Millburn, NJ",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 3,
-      "latest_url": "https://to.indeed.com/aancttdpx7s8",
+      "last_seen": "2026-10-12",
+      "times_seen": 4,
+      "latest_url": "https://to.indeed.com/aa4rnclhrkrc",
       "status": "seen"
     },
     {
@@ -12114,9 +12114,9 @@
       "title": "Finance Analyst",
       "location": "New York, NY",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aa4slx62xldr",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aa8yblbn6gkq",
       "status": "seen"
     },
     {
@@ -12312,9 +12312,9 @@
       "title": "Banking Graduate Programme 2027 London",
       "location": "London",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aaxv9svqrrgh",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aavgjs4dwwlt",
       "status": "seen"
     },
     {
@@ -12345,9 +12345,9 @@
       "title": "EMEA Markets Summer Analyst",
       "location": "London",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aatrrbkp4khc",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa7z8rlmc4wl",
       "status": "seen"
     },
     {
@@ -12356,9 +12356,9 @@
       "title": "Markets Analyst - Equity Trading",
       "location": "上海市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aajg24qqtvfm",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aalgvb7d4stg",
       "status": "seen"
     },
     {
@@ -12378,9 +12378,9 @@
       "title": "Finance Analyst",
       "location": "上海市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aanqz7sgrvwd",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aalyvbyrsc6g",
       "status": "seen"
     },
     {
@@ -12389,9 +12389,9 @@
       "title": "Market Intelligence Analyst",
       "location": "上海市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aarjw2k7drzm",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aafkwjt7bd2j",
       "status": "seen"
     },
     {
@@ -12411,9 +12411,9 @@
       "title": "Risk Strategy Analyst",
       "location": "深圳市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aazsh7stshz8",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aax76qdhnpwx",
       "status": "seen"
     },
     {
@@ -12455,9 +12455,9 @@
       "title": "Investment Banking Analyst",
       "location": "Central, Hong Kong Island",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aa484l798qnq",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aadktp4l24pb",
       "status": "seen"
     },
     {
@@ -12488,9 +12488,9 @@
       "title": "Global Corporate Banking Summer Analyst - 2027 - Shanghai",
       "location": "上海市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aalllvqsn7kl",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aap8d6pnybgz",
       "status": "seen"
     },
     {
@@ -12532,9 +12532,9 @@
       "title": "Finance Analyst",
       "location": "上海市",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aagzdz2n8jqt",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aaylyfvqykbk",
       "status": "seen"
     },
     {
@@ -12653,9 +12653,9 @@
       "title": "Analyst, Credit Sales",
       "location": "Central, Hong Kong Island",
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aayj47sfv9l8",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aayvndmpqrp2",
       "status": "seen"
     },
     {
@@ -12829,9 +12829,9 @@
       "title": "Junior Data Analyst",
       "location": "Brockton, MA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aacwykkpldq9",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa9lzshl4c2y",
       "status": "seen"
     },
     {
@@ -12862,9 +12862,9 @@
       "title": "Finance Analyst - MEC Industrial (Entry Level)",
       "location": "Waltham, MA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aak9rqmr9yj9",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aa9m8trx98p8",
       "status": "seen"
     },
     {
@@ -12906,9 +12906,9 @@
       "title": "Commercial Relationship Manager (C&I Lending)",
       "location": "South Easton, MA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aa2tylbmdpyd",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa4fmyp2wfnj",
       "status": "seen"
     },
     {
@@ -12917,9 +12917,9 @@
       "title": "Commercial Relationship Manager (CRE Lending)",
       "location": "South Easton, MA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aa4xht6blvsb",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa4z67txxdst",
       "status": "seen"
     },
     {
@@ -12939,9 +12939,9 @@
       "title": "Program Manager, Senior - TS",
       "location": "Bedford, Massachusetts",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZLOTZqYkVDdjVrbHN0bjczeUNHWmZ3EiQwMWExMTYwYi1jNjViLTc3OWMtOGQyNS1hYjc2MTgzZjJmYjIaW0FBSE8wTDk5end3NVltel9XckJDZFhEck9ZSFhPTWhrY0kzRFlMbGI1TDFNQ1RaSF82TnNSMThpMkFzS3V4Qk9NQU10SDZIRDhrVHFkMnJwVTBGWEowYUttMlkgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZLOTZqYkVDdjVrbHN0bjczeUNHWmZ3EiQwMWExMmZjOC0wZjdmLTc5NzEtOTBlOC1iMDM5YzlkYzJjZmMaW0FBRjNyYzJPSWVRVEVSMVJ0aEJpc1JQdTdqQWZVMFdJV0FmUlJ2bVpaeEs5Z2h6dG1UdW1wME9qSmJ5UnNrT0ZKOUlRakN3bTgxblhRODBXUlUzNEVqNnBFNncgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -12961,9 +12961,9 @@
       "title": "Staff Quantitative Risk Management Analyst - Credit Risk",
       "location": "Chelmsford, Massachusetts",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1Z2J5VHJTN0IwVGxudzI5dHFURll3EiQwMWExMTYwYy0zODk1LTcxZGItODRkNC00MTIzNmU0ZWNkNjYaUEFBRndoYmlrNkpBUjV6RTBaT0NIN0dGUFZrY3VpVmZacF91dkxBNm9EUWloWHI3T0lKc2lacTFTWHNEVW5YQndqbkZQNTIzaWRLc28zRWtRIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1Z2J5VHJTN0IwVGxudzI5dHFURll3EiQwMWExMmZjOC0yMTQyLTdhNzItYjdlNi1lMmM0YTZhYjFmMmMaUEFBSEJ0TkxBdVJBMlc0RHQ5a1N5VEVOU2hITGY4QWRJQ1FrQXlqZnZFV0xqMHMxVURsSmNUSTNGbEVlZUNLS3J2dllBRUJNQ0NBR3RtNDlqIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13027,9 +13027,9 @@
       "title": "Senior Financial Analyst",
       "location": "Boston, Massachusetts",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXY3FhYXBzNXpFeFlidUhVOUtYcWJ3EiQwMWExMGJiYi1lM2UzLTcxZDQtOTFlNC0xOGZiNzYwYjQ0NDUaW0FBSHFBb0lfUjZ5QzM0MDBJNnFyWXBLYU5MQjg2ODBqdXltZ2thUU5JRWpBM3RJTUdBQ3hZUzZRTlhyX0E0SldrWkY0ZEprTXlfbUttc3BsbXd3VXZCSmktS3Mgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKa2lYbGgzNmNobzlsM01QeElzcGJBEiQwMWExMmZjOC00MjczLTc1NzQtODNlNS1iMTgwYWZlMTQ5N2QaW0FBRU5MWVVoSmFrRUo2Yk9KakREV1JtQTRHLTVNSVV3VEI2MlRfUmI0MXotMTFyQ09sSXBReG11TVpUMWJ6QU4yX2tFQWttSng1MW5jVTJJMWxGNWVzWHEtV28gya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13137,9 +13137,9 @@
       "title": "Front Office Credit Risk Analyst, Assistant Vice President",
       "location": "Boston, Massachusetts",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3TFptX2ZzMFJZTjFDUWpselZSR1BBEiQwMWExMGJiYi1lYjkxLTc4ZWEtOWZmNC00N2VhMzcwZTM2YzUaUEFBSEp0SHUybEFLRkJ1R1M2RjFWamNwaHhIVDlVQ0RJeEhDVWdQTXZHVVU2UmZ5QWZ4cnJqOW1lT3RLemtIMmJTRC1OUXlfbDRXajBSZURtIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3TFptX2ZzMFJZTjFDUWpselZSR1BBEiQwMWExMmZjOC0yMTQyLTdhNmYtOGE5YS1kODQ1NjBkOTUxMjYaUEFBSHFlVnpGQ1JuVG4wYWllV1dSNTA5RmZCd1RoSmZXeUcybHUtM2U0UG1yLXFGTzFhUU1sXy1VTEFDSmVRR0x3cmFXYURzNjlzZ2o3ekNEIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13159,9 +13159,9 @@
       "title": "Outside Sales — Fintech / AI Trading Platform",
       "location": "Manhattan, NY",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aay6jwbp2cs7",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aal9kfnljb9z",
       "status": "seen"
     },
     {
@@ -13170,9 +13170,9 @@
       "title": "Senior Analyst, Municipal Credit",
       "location": "New York, NY",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aaz74ccs2b6m",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa87ldbfwngy",
       "status": "seen"
     },
     {
@@ -13192,9 +13192,9 @@
       "title": "Analyst, Private Credit",
       "location": "New York, NY",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aag2tgbxfl6n",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa7d8d7r8gfl",
       "status": "seen"
     },
     {
@@ -13269,9 +13269,9 @@
       "title": "Supply and Demand Planning Analyst",
       "location": "New York, NY",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aaxbzslb2gb2",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aawt87g7b29n",
       "status": "seen"
     },
     {
@@ -13313,9 +13313,9 @@
       "title": "Supply Chain Analyst",
       "location": "Park Ridge, NJ",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aa9qxd8677nd",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aavf9gvmmzby",
       "status": "seen"
     },
     {
@@ -13500,9 +13500,9 @@
       "title": "Front Office Quantitative Analytics (Latin America Rates & FX) - Associate / Vice President",
       "location": "Manhattan, New York",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKalMwNHpqMjVLeGlfNnFUQUlfRjl3EiQwMWExMGJiYi1lYWU1LTc4ZWEtOGE4Ni03YWJiMGJlY2IwMGYaW0FBRzE5VWpTTjRETEJfeS1jNjlBY3RvdEwtbDduRGVxcm9DbnhlSUszb2RJbjNoVWxia3pVZHA0N19jUVFTelhhekFBVXdEZVJTWUVCMUxPanBPLWJaNEJiU3Mgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKalMwNHpqMjVLeGlfNnFUQUlfRjl3EiQwMWExMmZjOC0zNDU0LTc1NTYtOTU5ZS01ZjU4NzQ3MjU1YjAaW0FBRkhsSlhueEhaX3dZSXdjbGd5c010cWpBT2lIMTR4eWx4QXZuaWZVRXFiTTZnVldkVnFKN29nTkNsdDZrY2VldW5sb1hEeFl4dndfWFNQUno2T09NV25mOU0gya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13665,9 +13665,9 @@
       "title": "Privacy Program Data Analyst (HIPAA)",
       "location": "New York, New York",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXalhqQm1uOXQzRnJCLXY1VzB6QlB3EiQwMWExMGJiYi1mNWFmLTc0ZjktYjFhNi1iZDZkMWIyMzdlZjQaW0FBR0NmNlZ2Y19lb1JKZTU5clFvTnRPSDJqUHhGQUc4R1lobVJlTUl1RloxemNGOGFjSTNFbDBaWjhMWFFoM1V6UGh6VDRlY3dfeUpXSDV6RklSQUE3clBJQmsgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXalhqQm1uOXQzRnJCLXY1VzB6QlB3EiQwMWExMmZjOC0xMmFmLTdjMTQtOGU4OC03MjUxYjlkNjA3NTUaW0FBRllBOGZZZG5XaEdFZnYycHJDZll2bFRhREZ5Tm13Um81SURzLWVXTVhTNG00dGUyNHhzMTVUVGlPNXhTVlV5QTlhOTdfSTQtc2xlVlFrZTlpSkI3YV81Tjggya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13676,9 +13676,9 @@
       "title": "Staff Quantitative Researcher (Market Research)",
       "location": "New York, New York",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY4aVg2YVFsbVo5WWxEOEZmUDVwOTBBEiQwMWExMTYwYy0zMmEyLTc3MWUtOTFiOS1lNjNlZDA5OWIyZjYaUEFBRlNueF9WVC1mWmQ2aGpEbFpkUTlwWUI0N0dPOFExZGV6cGtqQ0hiWFBLYllZNW9LdXNsYTlzZ3ZjXzcxcFJTaVlkSDhPelBuZGtXVWtzIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY4aVg2YVFsbVo5WWxEOEZmUDVwOTBBEiQwMWExMmZjOC0xZTg2LTdlMDAtYmVjYi1kNjMzYTAxMDc2OGUaUEFBRXJDZlV5SjFkUWk1UDZhRVpMNG9DZ2hWQXpLZEdpMHlhZVJtT1NaTUFqeFRJZnNsSUtPNmctZWNFb0NZcENTOWdpak9kWE5Peml1clpqIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13687,9 +13687,9 @@
       "title": "Senior Quant Researcher Manager/ NYC",
       "location": "Manhattan, New York",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZITU1sRkpoSzQ5QXZkVjFWQ0dYVEp3EiQwMWExMTYwYy0zMmEyLTc3MTYtOTFjNi1lZTdjOGI3NmRiYzMaW0FBSG5NcU41TzU2MGl0YjBuSkhxUUFSRTh4QUFaWVhFRlc4OHZseDdxeDRLNFdybXUwMkpDQ041bTQ0MDk1eXlBNHIxSG5DWmJLbkZEdHV6ekFhajFDRjU0LW8gya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZQVXEwZDZZb01DeHJ3WFR5RGdWb0V3EiQwMWExMmZjOC0xZTg2LTdkZjgtODg1Ni1lZTA3ZjU4YjI3OGMaW0FBSHp1TjJKVlV0c2kxRExTbG1IX29wLXNKQmVEczk1MUgtXzc0dVNnQTk5VHQ5NU5iX3FOS09PcWRleUp3eEpIenRwLThFZ0Z0V0VvcGl6QmoydXRlNlFEWWMgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13698,9 +13698,9 @@
       "title": "Senior Quantitative Researcher",
       "location": "Manhattan, New York",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ1V1I5cTJFbVJzNlFkTklteW5JOFRBEiQwMWExMTYwYy0zMmEyLTc3MTUtOGRhYi0zZjIzMDYwN2EzYmQaW0FBRUh1TzZXR3B4UWg1YktUd1NEcER2TFdId2E2alpScFJkbk5yVVRfT0QwMDRDUWxPenNTVGFhaHk0R2c0Ni16RWg5SGx4alhOZVpYSDFQaWlyOEk3c0Nnb00gya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ1V1I5cTJFbVJzNlFkTklteW5JOFRBEiQwMWExMmZjOC0xZTg2LTdkZjktODZiZC1hNjg0OWY4YzAxZGUaW0FBRllmTU1HY2VjQW5xUjU3WWdlMXA1R21ZNnhGSkFmTXFOWlZzNlhtMlVFS3NyMmpualBwYV9IbUNkdnRKZ2Y5OEtxR04yMEtpMXJiWFFPNTJrcG9mYlJwR2cgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -13742,9 +13742,9 @@
       "title": "Commercial Real Estate Loan Officer",
       "location": "Old Bridge, NJ",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aalvclljdl4t",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa8jdgptd7cx",
       "status": "seen"
     },
     {
@@ -14039,9 +14039,9 @@
       "title": "Application Developer III / Quantitative Analyst in Jersey City, NJ 07310 (Hybrid)",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPNmt6ZVFzbnZ2cnFmTlpEWHV1OXpnEiQwMWExMTYwYi1jYzBkLTcyMTktOGNhYi0zYzQzZTAwZTBiMGIaUEFBSE4xeU5kbTQ1MGh2X2tZVkZCZHdOeE9vbV9WVWdhelpfVWh2UlhXdXp3aEU5ZVdiMWdTbG4xeHhfQWFMZ3pNQ0VhZ1lKaktuYnFfbFdIIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPNmt6ZVFzbnZ2cnFmTlpEWHV1OXpnEiQwMWExMmZjOC0zNmNjLTcwOTAtYjQwNi1mMDk3YjUxYjkzOGUaUEFBRXhWbGxqYjBKaXd1NjJ2VlNrTUYyUHRnQUluRENodUtsOVdDNXB6M2g0bVQyTEl6RHZOVHlwTWJ3dVFfZ2VlY284ZG5xTEotT3IzTDZnIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -14061,9 +14061,9 @@
       "title": "Quantitative Risk & Portfolio Engineer",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZBQm1kMElLUzV2a2FybE1LWWMxOThBEiQwMWExMTYwYi1jYzBkLTcyMWItOWU0MC1lNDU5YjUzOGI3MGUaUEFBSFV1cEVQZ0V6LUw3Z28tRTJrNGF1dUFJVU1UWHI4ZEllSWZuN1puc3U0elBmRVNrY2ZER3p2X2p1MmlsdjcxdXpEZ3UxTVA5NUtaWm4xIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZBQm1kMElLUzV2a2FybE1LWWMxOThBEiQwMWExMmZjOC0zNmNjLTcwNzEtYjdmMC05NzYyZmE2NzMzYmQaUEFBSEN2ZU8xSDNqbmZPcnI3dEt0VUdINFZhTUota0tzYk9GSlUtQlpER1dtUGo1cXZQTlZDVGRxZExCbUY5UEM1WmpOWWVDd2s4SVUwS0QzIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -14105,9 +14105,9 @@
       "title": "Senior Group Risk Analyst",
       "location": "Mount Laurel, New Jersey",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZFNnZDN0FTWkRxOGdDSDFXTWpyZ2xnEiQwMWExMTYwYi1mNGMxLTdkZmUtYWQwMy04N2FhY2EwOGUxNTAaUEFBRzl1OHEtZmJvSmxRazFybk9USjkzT0RXcjFXUF9fZVNTSkVrc3VCWVVsRVAzOW1fVEdLSldST2RhUTlMS1N5MmNfYkhTYTVLMVI4QnRHIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZFNnZDN0FTWkRxOGdDSDFXTWpyZ2xnEiQwMWExMmZjOC0xNTY4LTc5NmQtYjJkMy1iNTYyMTVmZTA0Y2YaUEFBR2N4bVlad19CU3ZUWE5mNEZ0dVlvYlFRczRTMXM1OFVIV3B5RHBwa3Vuc3pfYlBOZFR2all1QzBqb0VQTXp2SHNSQm96bmdlWUppRWM3IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -14237,9 +14237,9 @@
       "title": "Head of Payments Sanctions and Credit Risk Technology - Director",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZIa0lBdEZCME5qN2dIR25iMkxOWkNBEiQwMWExMGJiYy0xMmU4LTdkYmQtOWEyZS1lMTQ5OWZiNWMwNjgaW0FBR0VMcm9RMV9mMVJVTWxFY0JiSFJ6aTR0dmVQUGFxRTctdmZuUXRKY3Z3YUFGdFhneXFsdHVMMGFBeHhpZERHNHBfT2hTaHhQZ0hTRUFhNFo4Q2U1ZEpSOWsgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZIa0lBdEZCME5qN2dIR25iMkxOWkNBEiQwMWExMmZjOC0zZmY5LTdjY2ItOTE2My05YTg2ZWJlOTE1OTYaW0FBSEJrblo2TEF1T3ZRT3lLMURSTzcxdzdGNy1aUEZid2gwMXE3Y3A5WlRpUXFjY251NkxVdXBndEdQcWF2Y0h1WlVoSEplNXA1TURjVGk4WUgwU2VQM3R0eVEgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -14248,9 +14248,9 @@
       "title": "Risk Management - Quant Modeling Lead - Vice President (Wholesale Credit Risk Modeling)",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZCQjFEWDZTSzRwNlpzajR3RlR6LWF3EiQwMWExMGJiYy0xMmU4LTc5MGQtOTZiOC0xZWIxZTg1MzBkYjEaW0FBR3I0SFlRTmtSWlo2RkotX01LWkFWLXhWSENhdDYzV2dnbzBPUVV3Qm1NWjJ4VTFjWjExa1lTN3V0TFZ1ZHpkUVF1U3FRWENnNmF0U1hzUjlhMGIwekxONEEgya0FEAEYya0F&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZCQjFEWDZTSzRwNlpzajR3RlR6LWF3EiQwMWExMmZjOC0zZmY5LTc3YWUtOGE3Yi0xODIyNTIxOGQ0OGMaW0FBSGJYdHhOUmhmRWMtZk1NRzRFWEQtNVByeV90QjAyWUpINXo0dmNHLXE4RU5jYlA0cF9zMmFVWWl5cjhoSHBFQ01obUJmcHRJSXNCbDREd09nR1dUX3c5Zncgya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     },
     {
@@ -14303,9 +14303,9 @@
       "title": "Analyst Management",
       "location": "Port Hueneme, CA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aabdmwqbqpzq",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aa99hgbtnnvq",
       "status": "seen"
     },
     {
@@ -14314,9 +14314,9 @@
       "title": "Risk Analyst - AI Trainer",
       "location": "Cupertino, CA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-05",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aabwtg6cgfw2",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aanttjfjr6wn",
       "status": "seen"
     },
     {
@@ -14369,9 +14369,9 @@
       "title": "Commercial Real Estate - Real Estate Banking Program Analyst",
       "location": "San Francisco, CA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aazqymvkmk7f",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aaps8qnnx7s6",
       "status": "seen"
     },
     {
@@ -14391,9 +14391,9 @@
       "title": "Analyst, Financial Planning & Analysis",
       "location": "Culver City, CA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aatvn8gmbdj9",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aahnjfxy4qt4",
       "status": "seen"
     },
     {
@@ -14479,9 +14479,9 @@
       "title": "Data Analyst II, Reporting & Advanced Analytics Part Time 26-84",
       "location": "San Ramon, CA",
       "first_seen": "2026-10-05",
-      "last_seen": "2026-10-07",
-      "times_seen": 2,
-      "latest_url": "https://to.indeed.com/aahzrskxs94c",
+      "last_seen": "2026-10-12",
+      "times_seen": 3,
+      "latest_url": "https://to.indeed.com/aaxskw4h7tpq",
       "status": "seen"
     },
     {
@@ -16547,9 +16547,9 @@
       "title": "2027 | EMEA | London | Risk | Summer Analyst",
       "location": "London",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aahgk22vljrv",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aahyhnh8ggpq",
       "status": "seen"
     },
     {
@@ -16569,9 +16569,9 @@
       "title": "Quantitative Researcher – Fundamental Equity Research",
       "location": "London",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aa6gvmvw6vtl",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aadqr2bgjly7",
       "status": "seen"
     },
     {
@@ -16602,9 +16602,9 @@
       "title": "Junior Credit Administration Analyst",
       "location": "Maspeth, NY",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aalnfvyfk9bw",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aabzr8n7vzyj",
       "status": "seen"
     },
     {
@@ -16613,9 +16613,9 @@
       "title": "Enterprise Credit Summer Analyst - 2027 - Shanghai",
       "location": "上海市",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://to.indeed.com/aachr8cwrx7c",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://to.indeed.com/aab7myvbxrsc",
       "status": "seen"
     },
     {
@@ -16635,9 +16635,9 @@
       "title": "1st Line Clearing Risk Analyst",
       "location": "New York, New York",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYV1BiZTlDQ1F2dW1hdUkzUlpKSlN3EiQwMWExMTYwYi1jOTljLTdhMDEtODIyMy1lOWM3NWY1YWFhOWYaUEFBR3NtWW5QdlZZX2RCdU1remthbVlKUUpOWnlaVWhkX0FYN0VWMFY5c2lQamcycjdNNTd6dTcxMkVBSktiLU5Id0swXzNySVZWLXY0dFd5IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYV1BiZTlDQ1F2dW1hdUkzUlpKSlN3EiQwMWExMmZjOC0yNDU2LTdlN2QtYTNiZi0xMzA2M2Y1MWViZDIaUEFBRkZ0Q3dNNWR2NHBrYTNNeGNjS0pqR1plV0ZOa1NDSFJYNThaZ2hwU3llVUJ0RWtJeWk5RXA4TVpGU2ZPUEgxRFdCY292UXZkTTFLbXRIIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -16657,9 +16657,9 @@
       "title": "Credit Analyst - Equipment Lending",
       "location": "Burlington, New Jersey",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
-      "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtbjAwaGRBeU0tc09BU0padExYa0pREiQwMWExMTYwYy0zZTNmLTc5MWMtYTUxZi1lODY3NjY0ZDY2MTMaUEFBRnp0aVZ4NVEtekdEd3UxUDRLRF9weE16Tjh0Zy1yRFJHbzBQMjN1RDJsWW9JWlBqUHlJOFY5M0hNei1kbjF1MTNCZXhCTXJWU3BHc2RvIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtbjAwaGRBeU0tc09BU0padExYa0pREiQwMWExMmZjOC0zZmY5LTc3Y2QtYmFkYi0zODUxMDk5NzgzNzkaUEFBRjBXN1lYaXp4U3MtNmxDLVZrcFhtWWo5cnZEU1lfVEplR2Nfb05KTk9paXM3ODVITDh3TFktYWt2UzI0X1dVQ0JaU1BDaTVuVjlrSHo5IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "status": "seen"
     },
     {
@@ -16668,9 +16668,152 @@
       "title": "Securities and Market Risk Data Analyst",
       "location": "Jersey City, New Jersey",
       "first_seen": "2026-10-07",
-      "last_seen": "2026-10-07",
+      "last_seen": "2026-10-12",
+      "times_seen": 2,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtMjdpS3ByT1A3OHp0UXUxY0hSc29BEiQwMWExMmZjOC0yNDU2LTdlNmYtODZiYy1hZWIzMmNmMjE2ZTUaUEFBSHRZR0hrZmVvV3FZdjA5N1hpeElwc1hHT1lJVDdFTDlZZVZpZDBZY2JERVhoZTkxSVpDTk9LTlZuTXg3V1hfQWhWbTBELTA1eTBTdWdPIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "fiserv|fraud risk analyst|berkeley heights nj",
+      "company": "Fiserv",
+      "title": "Fraud Risk Analyst",
+      "location": "Berkeley Heights, NJ",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
       "times_seen": 1,
-      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtMjdpS3ByT1A3OHp0UXUxY0hSc29BEiQwMWExMTYwYy00NzgzLTcxZTItOWE2OS04MDk0NGIxMzc0MzEaUEFBRVF2N21Tc2loVTZmZmhrbUZQa3p2OGdYRG5FODdkRVhON1ZCZXNtOUdLLU1NWUw2am8wMTJPdmlwQlN1MXhKWVd6T3NONFZfY0pGLVVTIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "latest_url": "https://to.indeed.com/aadd4jyhmtvl",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "tekcogno|market data risk applications analyst|jersey city nj",
+      "company": "Tekcogno",
+      "title": "Market Data Risk Applications Analyst/",
+      "location": "Jersey City, NJ",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aabb6km4f2r9",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "parahunt global solutions|data analyst|long beach ca",
+      "company": "Parahunt Global Solutions",
+      "title": "Data Analyst",
+      "location": "Long Beach, CA",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aa6q4flb6rrq",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "dataannotation|quantitative analyst ai trainer|lowell ma",
+      "company": "DataAnnotation",
+      "title": "Quantitative Analyst - AI Trainer",
+      "location": "Lowell, MA",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aaqzjk4ygq77",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "capula|credit quantitative analyst|london",
+      "company": "Capula",
+      "title": "Credit Quantitative Analyst",
+      "location": "London",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aa8c4ktvjqyh",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "traveloka|data analyst|",
+      "company": "Traveloka",
+      "title": "Data Analyst",
+      "location": "深圳市",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aa28n7vvpv82",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "traveloka|data analyst discovery intelligence|",
+      "company": "Traveloka",
+      "title": "Data Analyst — Discovery Intelligence",
+      "location": "深圳市",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://to.indeed.com/aamvjsrsy4hg",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "fidelity investments|quantitative risk analyst|boston massachusetts",
+      "company": "Fidelity Investments",
+      "title": "Quantitative Risk Analyst",
+      "location": "Boston, Massachusetts",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtNlBKbVB1TXNjdU9lZ3Zja05sWUNREiQwMWExMmZjOC0wZjdmLTcyZmEtYWVmMi02MzUxMzExOTM3Y2MaUEFBRWRhT2RhTEhhRWZseTU1RHV4eWdfQms0OHVRUG9scEcwWm1NSU1lLVFhRjZlc0xjSXJvMDE0UUtfRm1hMEtMYmhzODNCR1ZaTmxETTlsIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "robert half|data analyst|cambridge massachusetts",
+      "company": "Robert Half",
+      "title": "Data Analyst",
+      "location": "Cambridge, Massachusetts",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZfVWdlSWpodk54c1ZfVG1LTGJPNXpREiQwMWExMmZjOC0xYmZlLTc1N2EtODA3Yy0xYjYwNGEzNmM1NzIaW0FBSEppakZtcFdsVFd4eDlCZmpzQW92YTlfNWNWLXNDRXBMLTVwYmhyX0gxb3JwTks0djdtUDBvM1FLR09idEN2MU9tN1RDd3BVVktVSHRUQWNTajE2c2JfRGsgya0FEAEYya0F&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "ubs experienced professionals job boards|market risk analyst|new york new york",
+      "company": "UBS - Experienced professionals - job boards",
+      "title": "Market Risk Analyst",
+      "location": "New York, New York",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZfcS1jV3N3Q0h2T1VTa21Qc3BYNjZREiQwMWExMmZjOC0yNDU2LTdlNTUtOWY0NS04NzI0NTQ5ZjRlNGYaUEFBR3RiaElYRlVmQ3dYcnFCV0xoQVBGcDM2T2dJNUxFay1jQWNVcWJJYUxaOER6YVgyYzlpbzJpUGVaNFF6WlNvUEI2VWR1NHM4ckFJMHdDIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "sunrise systems inc|operations data analyst career 26 05058|oakland california",
+      "company": "Sunrise Systems Inc",
+      "title": "Operations Data Analyst, Career_26-05058",
+      "location": "Oakland, California",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZfWnZjS0dQWklXR0hjRVJIOVFxaGVBEiQwMWExMmZjOC0zOWY2LTc5NzUtYmMzMC01NzVmYjcwMjUwY2UaW0FBRVYxcjVaUEtDVjJQLU54Z1VBdEszUXhwSlhOYmc1NUh1V3ZSXzRXQWRpTUlNbkwxSWdVYTBlOGMzeWpvTWFTUERwWTMtUlJ0bzVtNkFmLTg5dUFnd0R2bU0gya0FEAEYya0F&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "lancesoft inc|data analyst i|san francisco california",
+      "company": "LanceSoft, Inc.",
+      "title": "Data Analyst-I",
+      "location": "San Francisco, California",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZFdV81dmZHTmpLTXJUYmI2dWw4QVZREiQwMWExMmZjOC0zOWY2LTc5OTMtODQyMS05Y2RlMzliMWU5NjEaW0FBRkRXZG5JSVc4el81VlUtZ3JEOFNnT0dKbFF4NEJ3d3pJc3hHaGxiUTVvOTJsVmg3SzVBajBFTndTWXJITl90WHZwaGhqSW8wdmJkeVNOQzI3Ym5SajlhMEUgya0FEAEYya0F&tsid=100000502",
+      "status": "seen"
+    },
+    {
+      "fingerprint": "dcs corp|data analyst business intelligence and application support analyst|ridgecrest california",
+      "company": "DCS Corp",
+      "title": "Data Analyst, Business Intelligence and Application Support Analyst",
+      "location": "Ridgecrest, California",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "times_seen": 1,
+      "latest_url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZSV3gwM19MX1VjMXgwSXBMSGlGYjB3EiQwMWExMmZjOC0zY2Y2LTdiODEtYTYxNy0wOGMwNmE0NzY3MTYaW0FBSFVFMHM4U3pIS0t3ZS1GbVU1SEhrUFhjQ1dmaGhHZTFORFVlZWdzUGNpUkdIY2VCQzhrNWtCZTF6YUgza3JBTmVieEFRRkgyNGVneEhSQmNIb1ZVZkxvd1Ugya0FEAEYya0F&tsid=100000502",
       "status": "seen"
     }
   ]
